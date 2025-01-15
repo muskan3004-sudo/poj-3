@@ -1,0 +1,33 @@
+<div class="landing-page" [ngClass]="selectedClient?.themeClass">
+  <div class="top-right-dropdown">
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Select Client</mat-label>
+      <mat-select
+        [(ngModel)]="selectedClient"
+        (selectionChange)="onClientChange()"
+      >
+        <mat-option *ngFor="let client of clients" [value]="client">
+          {{ client?.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="glass-container">
+    <div class="welcome-section">
+      <h1>Welcome to Our Platform</h1>
+      <p>Connecting people, services, and ideas seamlessly.</p>
+    </div>
+
+    <div class="action-buttons" *ngIf="selectedClient">
+      <button mat-raised-button (click)="openLogin()">Login</button>
+      <button
+        class="top-right-dropdown btn-submit"
+        class="btn-submit"
+        mat-raised-button
+        (click)="openSignup()"
+      >
+        Signup
+      </button>
+    </div>
+  </div>
+</div>

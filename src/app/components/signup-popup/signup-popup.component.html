@@ -1,0 +1,32 @@
+<div class="glass-container-popup">
+  <h2>Create Your Account</h2>
+  <form (ngSubmit)="signup()">
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="name" name="name" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Username</mat-label>
+      <input matInput [(ngModel)]="username" name="username" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        [(ngModel)]="password"
+        name="password"
+        type="password"
+        required
+      />
+    </mat-form-field>
+
+    <div class="actions">
+      <button mat-raised-button class="btn-submit" type="submit">Signup</button>
+      <button mat-raised-button class="btn-cancel" mat-dialog-close>
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

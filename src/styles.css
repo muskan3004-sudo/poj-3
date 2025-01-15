@@ -1,0 +1,202 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Dropdown in the top-right corner */
+.top-right-dropdown {
+  position: absolute !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  z-index: 1000 !important;
+}
+
+/* Gradient background */
+.landing-page {
+  padding: 4rem 0 !important;
+  min-height: 100vh !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background: linear-gradient(135deg, #3a0a45, #0f2f4f) !important;
+  animation: gradient-animation 10s ease infinite !important;
+  color: #fff !important;
+}
+
+/* Glassmorphism container */
+.glass-container {
+  width: 600px !important;
+  padding: 2rem !important;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  text-align: center !important;
+}
+
+.client-page{
+width: 600px !important;
+  padding: 2rem !important;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  text-align: center !important;
+}
+
+/* Heading and text */
+.welcome-section h1 {
+  font-size: 2.5rem !important;
+  color: #fff !important;
+  margin-bottom: 1rem !important;
+}
+
+.welcome-section p {
+  font-size: 1.2rem !important;
+  color: #ddd !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Buttons */
+.action-buttons button {
+  margin: 0 1rem !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 30px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  background: linear-gradient(90deg, #ff8a00, #e52e71) !important;
+
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3) !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+.action-buttons button:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(255, 138, 0, 0.5) !important;
+}
+
+/* Glassmorphism container */
+.glass-container-popup {
+  width: 100% !important;
+  max-width: 400px !important;
+  padding: 2rem !important;
+  background: linear-gradient(135deg, #3a0a45, #0f2f4f) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  text-align: center !important;
+  color: #fff !important;
+}
+
+/* Heading */
+.glass-container-popup h2 {
+  font-size: 1.8rem !important;
+  margin-bottom: 1.5rem !important;
+  color: #fff !important;
+}
+
+/* Input fields */
+.input-field {
+  width: 100% !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.mat-form-field {
+  width: 100% !important;
+}
+
+.mat-input-element {
+  color: #fff !important;
+  font-size: 1rem;
+}
+
+.mat-form-field-label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Action buttons */
+.actions {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-top: 1.5rem !important;
+}
+
+/* Buttons */
+.actions .btn-submit {
+  margin: 0 1rem !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 30px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  background: linear-gradient(90deg, #ff8a00, #e52e71) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3) !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+.actions .btn-submit:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(255, 138, 0, 0.5) !important;
+}
+
+.actions .btn-cancel {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 30px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+.actions .btn-cancel:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3) !important;
+}
+
+.theme-client-a {
+  background: linear-gradient(135deg, #004d4d, #000000) !important;
+}
+
+.theme-client-b {
+  background: linear-gradient(135deg, #333333, #9b111e) !important;
+}
+
+.theme-client-c {
+  background: linear-gradient(135deg, #2a1a5e, #1a3c56) !important;
+}
+
+.mat-mdc-select-panel {
+  color: white !important;
+}
+
+/* Gradient background */
+.signup-client-page {
+  padding: 4rem 0 !important;
+  height: 100%;
+}
+
+/* Gradient animation */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

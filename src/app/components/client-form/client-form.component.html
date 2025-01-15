@@ -1,0 +1,94 @@
+<div class="signup-client-page">
+  <form [formGroup]="requestForm" (ngSubmit)="onSubmit()"
+    style="padding: 20px; background-color: #f9f9f9;">
+    <mat-tab-group>
+
+      <!-- Customer Details Tab -->
+      <mat-tab label="Customer Details">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 10px;">
+          <mat-form-field style="height: 75px;">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" required />
+          </mat-form-field>
+
+          <mat-form-field style="height: 75px;" style="max-width: 300px; width: 100%;">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" required />
+          </mat-form-field>
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Preferred Name</mat-label>
+            <input matInput formControlName="preferredName" />
+          </mat-form-field>
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput formControlName="dob" [matDatepicker]="picker" required />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <!-- Address Section -->
+          <mat-form-field style="height: 75px;">
+            <mat-label>Street Name</mat-label>
+            <input matInput formControlName="streetName" />
+          </mat-form-field>
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Postcode</mat-label>
+            <input matInput formControlName="postcode" />
+          </mat-form-field>
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Town</mat-label>
+            <input matInput formControlName="townLocationName" />
+          </mat-form-field>
+        </div>
+      </mat-tab>
+
+      <!-- Employment Details Tab -->
+      <mat-tab label="Employment Details">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 10px;">
+          <mat-form-field style="height: 75px;">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" required />
+          </mat-form-field>
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" required />
+          </mat-form-field >
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Preferred Name</mat-label>
+            <input matInput formControlName="preferredName" />
+          </mat-form-field>
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput formControlName="dob" [matDatepicker]="picker" required />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field >
+
+          <!-- Address Section -->
+          <mat-form-field style="height: 75px;">
+            <mat-label>Street Name</mat-label>
+            <input matInput formControlName="streetName" />
+          </mat-form-field >
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Postcode</mat-label>
+            <input matInput formControlName="postcode" />
+          </mat-form-field >
+
+          <mat-form-field style="height: 75px;">
+            <mat-label>Town</mat-label>
+            <input matInput formControlName="townLocationName" />
+          </mat-form-field>
+        </div>
+      </mat-tab>
+
+    </mat-tab-group>
+  </form>
+</div>

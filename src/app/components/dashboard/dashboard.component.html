@@ -1,0 +1,149 @@
+<div class="landing-page" [ngClass]="selectedClient?.themeClass">
+  <div class="top-right-dropdown action-buttons">
+    <button mat-raised-button (click)="logout()">Logout</button>
+  </div>
+  <div class="glass-container">
+    <div class="welcome-section">
+      <h1>Welcome to {{ selectedClient?.name }}</h1>
+      <p>Connecting people, services, and ideas seamlessly.</p>
+    </div>
+    <form>
+      <!-- Name -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          name="name"
+          [value]="selectedClient?.name"
+          placeholder="Enter client name"
+        />
+      </mat-form-field>
+
+      <!-- Description -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Description</mat-label>
+        <textarea matInput name="description" placeholder="Enter description">{{
+          selectedClient?.description
+        }}</textarea>
+      </mat-form-field>
+
+      <!-- Industry -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Industry</mat-label>
+        <input
+          matInput
+          name="industry"
+          [value]="selectedClient?.industry"
+          placeholder="Enter industry"
+        />
+      </mat-form-field>
+
+      <!-- Headquarters -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Headquarters</mat-label>
+        <input
+          matInput
+          name="headquarters"
+          [value]="selectedClient?.headquarters"
+          placeholder="Enter headquarters location"
+        />
+      </mat-form-field>
+
+      <!-- CEO -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>CEO</mat-label>
+        <input
+          matInput
+          name="ceo"
+          [value]="selectedClient?.ceo"
+          placeholder="Enter CEO name"
+        />
+      </mat-form-field>
+
+      <!-- Market Share -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Market Share</mat-label>
+        <input
+          matInput
+          name="marketShare"
+          [value]="selectedClient?.marketShare"
+          placeholder="Enter market share"
+        />
+      </mat-form-field>
+
+      <!-- Major Products -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Major Products</mat-label>
+        <textarea
+          matInput
+          name="majorProducts"
+          placeholder="Enter major products"
+          >{{ selectedClient?.majorProducts }}</textarea
+        >
+      </mat-form-field>
+
+      <!-- Website -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Website</mat-label>
+        <input
+          matInput
+          name="website"
+          [value]="selectedClient?.website"
+          placeholder="Enter website URL"
+        />
+      </mat-form-field>
+
+      <!-- LinkedIn -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>LinkedIn</mat-label>
+        <input
+          matInput
+          name="linkedin"
+          [value]="selectedClient?.linkedin"
+          placeholder="Enter LinkedIn URL"
+        />
+      </mat-form-field>
+
+      <!-- Twitter -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Twitter</mat-label>
+        <input
+          matInput
+          name="twitter"
+          [value]="selectedClient?.twitter"
+          placeholder="Enter Twitter URL"
+        />
+      </mat-form-field>
+
+      <!-- Recent Achievements -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Recent Achievements</mat-label>
+        <textarea
+          matInput
+          name="recentAchievements"
+          placeholder="Enter recent achievements"
+          >{{ selectedClient?.recentAchievements }}</textarea
+        >
+      </mat-form-field>
+
+      <!-- Competitors -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Competitors</mat-label>
+        <textarea matInput name="competitors" placeholder="Enter competitors">{{
+          selectedClient?.competitors
+        }}</textarea>
+      </mat-form-field>
+
+      <!-- Customer Base -->
+      <mat-form-field appearance="fill" class="input-field">
+        <mat-label>Customer Base</mat-label>
+        <textarea
+          matInput
+          name="customerBase"
+          placeholder="Enter customer base"
+          >{{ selectedClient?.customerBase }}</textarea
+        >
+      </mat-form-field>
+    </form>
+  </div>
+</div>
