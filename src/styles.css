@@ -185,6 +185,87 @@ width: 600px !important;
   height: 100%;
 }
 
+.form-grid-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* Adjust space between form elements */
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.mat-form-field {
+  width: 100%;
+  /* Ensures the form fields take the full width */
+}
+
+/* Center the container and give a bluish background */
+.glass-container-signup {
+  width: 100%;
+  max-width: 1200px;
+  /* Adjust max width for container */
+  margin: 0 auto;
+  /* Center the container */
+  padding: 32px;
+  background-color: #d0e8f2;
+  /* Bluish background */
+  border-radius: 8px;
+  /* Rounded corners */
+}
+
+/* Grid layout for form fields */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Two fields per row */
+  gap: 16px;
+  width: 100%;
+}
+
+/* Ensure all form fields take the full width */
+.mat-form-field {
+  width: 100%;
+}
+
+/* Flex layout for actions (buttons) */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  /* Space between buttons */
+  align-items: center;
+  /* Center buttons vertically */
+  gap: 16px;
+  /* Space between buttons */
+  margin-top: 16px;
+}
+
+.mat-tab-group {
+  width: 100%;
+  /* Ensures the tab group takes full width */
+}
+
+/* Ensure buttons have a minimum width and consistent padding */
+button.mat-raised-button {
+  min-width: 120px;
+  /* Button minimum width */
+  padding: 10px 20px;
+  /* Adjust padding for the buttons */
+}
+
+button.mat-raised-button[type="submit"] {
+  margin-left: auto;
+  /* Align "Submit" button to the far right */
+}
+
+button.mat-raised-button:not([type="submit"]) {
+  margin-right: auto;
+  /* Align other buttons to the left */
+}
+
 /* Gradient animation */
 @keyframes gradient-animation {
   0% {
